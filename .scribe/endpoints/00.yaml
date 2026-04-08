@@ -1,0 +1,254 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: product/create
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IlhRL1FBV2xvcEpEL0d2bFpkTVdNR0E9PSIsInZhbHVlIjoiN3VBL1Z1NFptN1JPdVhGVXlSVUZITEN1TVluNFRpVExMV2Z3SDcxSG0rdm9sZGVpWVdpNDVxL3p6d1dnRHR4QzRuSHZ3VVlneFhmRldybFlPdTNQVis1dmJiUG1nYXgvVnMvdEN6YW00VmxkMDBaOEo4OVRRdEhDUXJxMVZsV2siLCJtYWMiOiJlZjdiNzJlZTA0NTA4MDFiMGEwZDMzNzIzNTc0ZDU2OTBlYjZhN2VmMzRlOWE5ZDBkODg2OGVhMjBkMjZjOWQ5IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 14:54:17 GMT; Max-Age=7200; path=/; samesite=lax; happy-puppy-manajemen-produk-session=eyJpdiI6Ikd2ZW15M2JaWG5xb0E5aGN3TUVBZFE9PSIsInZhbHVlIjoiYWptVnN2MkxONTJvWmxrWS8xT3pNMHRoNzlXU1l0V3o3WEhqNUtWVy9UZlVna0p3dGRwR2EwZFF4L09HcVlGekhqSUl6UnZZeCs0UWpuTnh2eE83Yy84OUVRUTdaS25EaDg3ZGJycEFFSWllTkhHMS9sa1l6ejRiM3kveWFhVmkiLCJtYWMiOiI3NzU5ZmE3NTAzMWZkZjI4ZDFlM2I1MmI4YmIwZGVjYzY0ZDFmYTZlY2ZhY2M2NjE2NmVkNzY1YjE0NjQzYzY5IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 14:54:17 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'product/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the product.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          set-cookie: 'XSRF-TOKEN=eyJpdiI6IjJtWnVRdUZXTml5ZVFTUFZFL0pZcGc9PSIsInZhbHVlIjoibko1VEZEWHBjU0ZIUjloUDByUVhic3NXZXFPN05uVStZZDdoZFIwaUI5SUhvSGs3UW0vVDJYRFhNaEdBTmJrbm9DQ3U5MFVOSThRdXhrcmdwRnMzR2RpcVpjVUJnTmJOVGg5YWZObmpzb29DME5udCsyanJZQXNobjhRMEUyM1QiLCJtYWMiOiI3ZGMwNmQ2M2Q3NGE5ZmNiYzU5NmVjNDFkMjFkZTY4NGQwZjk0ZDU5MmEyYzk0NzUwMDljNTc4NzE4ZmEwZGE5IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 14:54:17 GMT; Max-Age=7200; path=/; samesite=lax; happy-puppy-manajemen-produk-session=eyJpdiI6IkdIMEdZZmJXck9kOVE2bHZuOFIyb0E9PSIsInZhbHVlIjoiMkNyNGMvbWhvM3dIcjU3U3dOc1o1TmtnRWt1QnpsbkxGT3pRUHUzejdPWmVkcGNWQlcvbGwyWThxV245UFk3ZU5Ra3pid2twUmMyYW81U1F6OWhhS2dhbmo4R0R3Z3BVLzQrM0o0a2tDajZKWkx6c20rR1N1eXdiRFl0R01tRVYiLCJtYWMiOiI0MGUzYTQyMjBjOTJmMDhmNGNmMWU0MzIwNTllNTM2YWY3ODllNGY5YjZhMjcxZjI3YmM2NWJiMmU1NGZjYmViIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 14:54:17 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'product/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update an existing product.'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the product.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: 'The name of the product.'
+        required: true
+        example: 'MacBook Pro'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: 'The category of the product.'
+        required: true
+        example: 'elektronik, alat tulis kantor, makanan dan minuman'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      price:
+        custom: []
+        name: price
+        description: 'The price of the product.'
+        required: true
+        example: 1500
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      stock:
+        custom: []
+        name: stock
+        description: 'Current stock quantity.'
+        required: true
+        example: 50
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      id:
+        custom: []
+        name: id
+        description: ''
+        required: true
+        example: architecto
+        type: bigInteger
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: 'MacBook Pro'
+      category: 'elektronik, alat tulis kantor, makanan dan minuman'
+      price: 1500
+      stock: 50
+      id: architecto
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'product/{id}'
+    metadata:
+      custom: []
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete an product.'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the product.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      id:
+        custom: []
+        name: id
+        description: ''
+        required: true
+        example: architecto
+        type: bigInteger
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      id: architecto
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
