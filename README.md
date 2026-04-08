@@ -53,3 +53,7 @@ The application will be available at: http://127.0.0.1:8000
 This project includes self-hosted API documentation. You can view the available endpoints, request parameters, and example responses by visiting:
 
 URL: http://127.0.0.1:8000/docs
+
+login credentials
+email: admin@gmail.com
+password: password
